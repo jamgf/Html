@@ -3,22 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formatação.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
     <title>Document</title>
 </head>
 <body>
+    
     <div class="copy">
+        
 <h1>
     Meu amigo Nick - curso de inglês
 </h1>
-<p>Desenvolvido com o que há de mais moderno no ensino de inglês para crianças entre 2 a 6 anos</p>
-<iframe width="853" height="480" src="https://www.youtube.com/embed/iHBRhx_immM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><button>Adquira o curso aqui!</button>    
+<p>Aprenda a falar inglês de uma maneira divertida</p>
+<iframe class="video1" width="853" height="480" src="https://www.youtube.com/embed/iHBRhx_immM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+   
 
 </div>
+<script language="JavaScript1.2">
+    var aa = 2021
+    var mm = 06
+    var dd = 12
+    var hh = 16
+    var mi = 00
+     
+  function setcountdown(theyear,themonth,theday,hour,minutes) {
+  yr=theyear;mo=themonth;da=theday
+  } setcountdown(aa,mm,dd)
+   
+   
+  var occasion="Fim da Promoção"
+  var message_on_occasion="É hoje"
+   
+   
+  var countdownwidth='510px'
+  var countdownheight='200px'
+  var countdownbgcolor='#ccffe1'
+  var opentags='<font face="Verdana" size="5" color="#000000">'
+  var closetags='</font>'
+   
+   
+  var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+  var crosscount=''
+   
+  function start_countdown(){
+  if (document.layers)
+  document.countdownnsmain.visibility="show"
+  else if (document.all||document.getElementById)
+  crosscount=document.getElementById&&!document.all?document.getElementById("countdownie") : countdownie
+  countdown()
+  }
+   
+  if (document.all||document.getElementById)
+  document.write('<span id="countdownie" style="width:'+countdownwidth+'; background-color:'+countdownbgcolor+'"></span>')
+   
+  window.onload=start_countdown
+   
+   
+  function countdown(){
+  var today=new Date()
+  var todayy=today.getYear()
+  if (todayy < 1000)
+  todayy+=1900
+  var todaym=today.getMonth()
+  var todayd=today.getDate()
+  var todayh=today.getHours()
+  var todaymin=today.getMinutes()
+  var todaysec=today.getSeconds()
+  var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+  futurestring=montharray[mo-1]+" "+da+", "+yr
+  dd=Date.parse(futurestring)-Date.parse(todaystring)
+  dday=Math.floor(dd/(60*60*1000*24)*1)
+  dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+  dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+  dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+  //if on day of occasion
+  if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=1&&todayd==da){
+  if (document.layers){
+  document.countdownnsmain.document.countdownnssub.document.write (opentags+message_on_occasion+closetags)
+  document.countdownnsmain.document.countdownnssub.document.close()
+  }
+  else if (document.all||document.getElementById)
+  crosscount.innerHTML=opentags+message_on_occasion+closetags
+  return
+  }
+  //if passed day of occasion
+  else if (dday<=-1){
+  if (document.layers){
+  document.countdownnsmain.document.countdownnssub.document.write(opentags+"Occasion already passed! "+closetags)
+  document.countdownnsmain.document.countdownnssub.document.close()
+  }
+  else if (document.all||document.getElementById)
+  crosscount.innerHTML=opentags+"Já passou"+closetags
+  return
+  }
+  //else, if not yet
+  else{
+  if (document.layers){
+  document.countdownnsmain.document.countdownnssub.document.write(opentags+dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" "+occasion+closetags)
+  document.countdownnsmain.document.countdownnssub.document.close()
+  }
+  else if (document.all||document.getElementById)
+  crosscount.innerHTML=opentags+dday+ " dias, "+dhour+" horas, "+dmin+" minutos e "+dsec+" segundos para o <b>"+occasion+closetags
+  }
+  setTimeout("countdown()",1000)
+  }
+</script>
+<button><a href="https:/www.google.com"> Adquira o curso aqui!</a></button> 
     <div class="explicando">
-<p>Nosso curso é constituído de 5 módulos, todos com 15 aulas cada, nas quais o aluno poderá aprender um 
-    extenso vocabulário <br>e também diversas músicas. Mais de 50 atividades serão propostas durante os vídeos
-</p>
+        <div class="explicando1">
+            <p>Nosso curso é constituído de 5 módulos, todos com 15 aulas cada, nas quais o aluno poderá aprender um 
+                extenso vocabulário <br>e também diversas músicas. Mais de 50 atividades serão propostas durante os vídeos
+            </p>
+        </div>
+        <div class="explicando2">
+            <p>O curso é dividido em módulos</p>
+        </div>
+
     </div>
     <h2>Comparação de preços</h2>
 <table border="1">
@@ -34,7 +136,10 @@
     
     <div>
         <h2>Quem sou</h2>
-        <img src="imagens/nick.png" alt="some text" width=400 height=200>
+        <img class="imagem1" src="imagens/nick.png" alt="some text" width=400 height=200>
     </div>
 </body>
 </html>
+
+
+<!--https://cpng.pikpng.com/pngl/s/425-4251410_selo-garantia-100-de-garantia-png-clipart.png-->
