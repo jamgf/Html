@@ -1,86 +1,166 @@
-
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+
 
 body {
-    background-color: #7cd656;
+    background-color: rgb(255, 255, 255);
     margin: 0;
   }
-
-.video1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: black;
+.container {
+  position: relative;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.copy {
-    background-color: #7cd656;
-    margin-right: 0;
-}
-
-  #relogio {
-    color: #7cd656;
-    margin: 20px;
-    border: 1px  rgb(255, 255, 255);
-    border-radius: 40px;
-    border-width: thick;
-    background-color: #a06bd6;
+.logo {
+  display: block;
+  width: 100%;
+ height: auto;
+ opacity: 1;
+ transition: .5s ease;
+ backface-visibility: hidden;
   }
 
-  button {
-    background-color: yellow;
-    font-size: 35px;
-    font-family: 'Roboto Slab', serif;
-    border-radius: 40px;
-    border: 0;
-    padding: 15px 80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    opacity: 0.6;
-    cursor: allowed;
+ .botao2 {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+ } 
+.container:hover .logo {
+  opacity: 0.3;
+}
+.container:hover .botao2 {
+  opacity: 1;
+}
+.text {
+  background-color: yellow;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#relogio {
+  color: chocolate;
+}
+.video1 {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 100px;
+  border-color: black;
+    
+}
+.copy {
+    
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
 }
 
+.explicando {
+  margin: 0;
+}
 .explicando1 {
-    background-color: #a06bd6;
+    background-color:white;
+ 
     padding: 40px;
-    text-align: center;
 
 }
-
 .imagem1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  border-radius: 50%;
+  float: left;
+  border-color: black;
+  border-width: 15px;
+ 
+ 
 }
+#quemsou {
+  float: inline-end;
 
+}
 .explicando2 {
     background-color: #d6d64b;
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(247, 244, 196),yellow);
     padding: 40px;
 
+}
+.preco{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-    color: rgb(0, 143, 0);
-    text-align: center;
+  color: rgb(0, 29, 0);
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2{color: rgb(0, 29, 0);
+  text-align: center;
+  font-size: 70px;
 }
   
 p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 25px;
-    text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 60px;
+  text-align: center;
+  box-shadow: black;
+}
+
+.autoridade{
+  background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+  margin: 0;
 }
   
+button {
+  font-size: 35px;
+  font-family: 'Roboto Slab', serif;
+    border-radius: 40px;
+    padding: 15px 80px;
+    border-color: black;
+    border: 0;
+    display: block;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: yellow;
+}
 
+.modulos{
+  background-color: rgb(223, 223, 25);
 
-p {
-    text-align: center;
-    font-size: 60px;
-    margin-top: 0px;
-  }
+}
+.mod1{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 780px) {
+  .mod1 {
+    width: 100%;
+  }  
+}
+
+.garantiafundo{
+  max-width: 100%;
+  background-color: white;
+}
