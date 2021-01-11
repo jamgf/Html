@@ -46,6 +46,12 @@ body {
 #relogio {
   color: chocolate;
 }
+#garantiaimg{
+display: block;
+margin: auto;
+height: 400px;
+padding-top: 100px;
+}
 .video1 {
     display: block;
     margin-left: auto;
@@ -76,6 +82,15 @@ body {
 #quemsou {
   float: inline-end;
 
+
+}
+#garantia {
+ 
+  font-size: 30px;
+  padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+
 }
 .explicando2 {
     background-color: #d6d64b;
@@ -98,8 +113,12 @@ body {
 
   h2{color: rgb(0, 29, 0);
     text-align: center;
+    display: bloc;
     font-size: 70px;}
-  
+
+  h3{color: rgb(0, 29, 0);
+      text-align: center;
+      font-size: 40px;}
   p {
     font-family: 'Roboto Slab', serif;
     font-size: 60px;
@@ -109,6 +128,14 @@ body {
   .autoridade{
     background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
   }
+  .garantia{
+    
+    margin: auto;
+    width: 50%;
+   }
+   .garantiafundo{
+    background-color: white;
+   }
   
   button {
 
@@ -132,7 +159,7 @@ body {
 
 }
 .mod1{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: left;
+  width: 33.33%;
+  display: inline;
 }
