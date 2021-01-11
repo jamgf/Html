@@ -2,14 +2,47 @@
   box-sizing: border-box;
 }
 body {
-    background-color: white;
+    background-color: black;
     margin: 0;
   }
-#logo {
+.container {
+  position: relative;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+ height: auto;
+ opacity: 1;
+ transition: .5s ease;
+ backface-visibility: hidden;
   }
+
+ .botao2 {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+ } 
+.container:hover .logo {
+  opacity: 0.3;
+}
+.container:hover .botao2 {
+  opacity: 1;
+}
+.text {
+  background-color: yellow;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 #relogio {
   color: chocolate;
 }
@@ -23,10 +56,10 @@ body {
 }
 .copy {
     
-    background-image: radial-gradient(farthest-side at 90% 50%, #97cc81, #7cd656 );
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
 }
 .explicando1 {
-    background-color: #a06bd6;
+    background-color:white;
  
     padding: 40px;
 
@@ -46,26 +79,37 @@ body {
 }
 .explicando2 {
     background-color: #d6d64b;
-
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(247, 244, 196),yellow);
     padding: 40px;
 
 }
+.preco{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
+}
   h1 {
-    color: rgb(0, 143, 0);
+    color: rgb(0, 29, 0);
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Roboto Slab', serif;
   }
 
-  h2{color: rgb(0, 143, 0);
+  h2{color: rgb(0, 29, 0);
     text-align: center;
-    font-size: 50px;}
+    font-size: 70px;}
   
   p {
     font-family: 'Roboto Slab', serif;
     font-size: 60px;
     text-align: center;
+    box-shadow: black;
   }
+  .autoridade{
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+  }
+  
   button {
 
       font-size: 35px;
@@ -82,3 +126,8 @@ body {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       background-color: yellow;
   }
+
+.modulos{
+  background-color: rgb(223, 223, 25);
+
+}
