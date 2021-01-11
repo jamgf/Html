@@ -163,3 +163,13 @@ padding-top: 100px;
   width: 33.33%;
   display: inline;
 }
+.testemunhos {
+  background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+}
+.facebook{
+  float: left;
+  width: 33.33%;
+  display: inline;
+  border: 2px;
+  border-color: black;
+}
