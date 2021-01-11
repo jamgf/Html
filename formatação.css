@@ -72,32 +72,14 @@ body {
     padding: 40px;
 
 }
-.imagem1{
-  display: block;
-  border-radius: 50%;
-  float: left;
-  border-color: black;
-  border-width: 15px;
- 
- 
-}
-#quemsou {
-  float: inline-end;
 
-}
 .explicando2 {
     background-color: #d6d64b;
     background-image: radial-gradient(farthest-corner at 90% 50%, rgb(247, 244, 196),yellow);
     padding: 40px;
 
 }
-.preco{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
-  height: auto;
-}
+
 
 h1 {
   color: rgb(0, 29, 0);
@@ -120,9 +102,36 @@ p {
 
 .autoridade{
   background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
-  margin: 0;
+  max-width: 100%;
 }
-  
+
+.preco{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem1 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.imagemLoh{
+  display: block;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 15px;
+}
+
+.quemsou {
+  float: right;
+  width: 50%;
+  padding: 15px;
+}
+
 button {
   font-size: 35px;
   font-family: 'Roboto Slab', serif;
