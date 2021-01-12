@@ -1,18 +1,45 @@
 * {
   box-sizing: border-box;
 }
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #004105;
+  
+}
+header p{
+  color: #d6d64b;
+}
 body {
-    background-color: white;
-    margin: 0;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
   }
+  #titulo{
+    font-family: 'Hachi Maru Pop', cursive;
+    color: #216603;
+  }
+  .copy {
+    
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+}
 .container {
   position: relative;
-  width: 30%;
+  width: 20%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
+.container:hover .logo {
+  opacity: 0.3;
+}
+.container:hover .botao2 {
+  opacity: 1;
+}
 .logo {
   display: block;
   width: 100%;
@@ -30,13 +57,9 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
+   text-decoration: none;
  } 
-.container:hover .logo {
-  opacity: 0.3;
-}
-.container:hover .botao2 {
-  opacity: 1;
-}
+
 .text {
   background-color: yellow;
   color: black;
@@ -60,10 +83,7 @@ padding-top: 100px;
     border-color: black;
     
 }
-.copy {
-    
-    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
-}
+
 .explicando1 {
     background-color:white;
  
@@ -71,12 +91,15 @@ padding-top: 100px;
 
 }
 .imagem1{
+
     display: block;
     border-radius: 50%;
-    float: left;
     border-color: black;
     border-width: 15px;
- 
+    padding: 15px 50px 15px 15px;
+    max-width: 100%;
+    float: left;
+
  
 }
 #quemsou {
@@ -97,6 +120,10 @@ padding-top: 100px;
     background-image: radial-gradient(farthest-corner at 90% 50%, rgb(247, 244, 196),yellow);
     padding: 40px;
 
+}
+img{
+  display: block;
+  max-width: 100%;
 }
 .preco{
   display: block;
@@ -156,7 +183,7 @@ padding-top: 100px;
       border: 0;
       display: block;
       margin: 30px;
-     
+     text-decoration: none;
       margin-left: auto;
       margin-right: auto;
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -165,7 +192,13 @@ padding-top: 100px;
 
 .modulos{
   background-color: rgb(223, 223, 25);
+  display: flex;
+  flex-wrap: wrap;
 
+}
+
+.modulos > div {
+  flex: 1 1 200px;
 }
 .mod1{
   float: left;
@@ -174,12 +207,11 @@ padding-top: 100px;
 }
 .testemunhos {
   background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
 }
-.facebook{
-  float: left;
-  width: 33.33%;
-  display: inline;
-  border: 2px;
-  border-color: black;
-  padding: 40px;
+.testemunhos > div {
+  flex: 1 1 400px;
 }
