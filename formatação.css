@@ -136,8 +136,11 @@ padding-top: 100px;
 
 }
 .explicando2 {
-    background-color: #d6d64b;
-    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(247, 244, 196),yellow);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    background-color:white;
+
     padding: 40px;
 
 }
@@ -230,10 +233,10 @@ color: white;
 }
 
 .modulos > div {
-  flex: 1 1 200px;
+  flex: 1 1 600px;
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
+  
 }
 
 
@@ -266,3 +269,16 @@ footer{
 footer > p {
   color: white;
 }
+#relogio{
+  display: block;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+#dias, #hora, #min, #sec {
+display: inline;
+border: 2px solid black;
+
+font-size: 40px; 
+ }
+ 
