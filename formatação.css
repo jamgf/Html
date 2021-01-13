@@ -21,11 +21,11 @@ body {
   }
   #titulo{
     font-family: 'Hachi Maru Pop', cursive;
-    color: #216603;
+    color: #ffffff;
   }
   .copy {
     
-    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(0, 165, 14), #195500 );
 }
 .container {
   position: relative;
@@ -59,6 +59,17 @@ body {
    -ms-transform: translate(-50%, -50%);
    text-decoration: none;
  } 
+
+ #cartao{
+   display: block;
+   height: auto;
+   width: 40%;
+margin: 40px;
+padding: 15px;
+
+   background-color: white;
+   border-radius: 30px;
+ }
 
 .text {
   background-color: yellow;
@@ -140,7 +151,7 @@ img{
 
   h2{color: rgb(0, 29, 0);
     text-align: center;
-    display: bloc;
+    display: block;
     font-size: 70px;}
 
   h3{color: rgb(0, 29, 0);
@@ -189,29 +200,51 @@ img{
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       background-color: yellow;
   }
-
+.modulo{
+  background-color: rgb(255, 255, 0);
+}
 .modulos{
-  background-color: rgb(223, 223, 25);
-  display: flex;
-  flex-wrap: wrap;
-
+  background-color: rgb(255, 255, 0);
+  display: grid;
+  height: 800px;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 1px;
+  padding-right: 410px;
+  padding-left: 410px;
 }
 
 .modulos > div {
   flex: 1 1 200px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
-.mod1{
-  float: left;
-  width: 33.33%;
-  display: inline;
+
+
+.testemunho{
+  background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+  display: block;
+}
+#testemunhos{
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
 }
 .testemunhos {
   background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 400px;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  max-width: 100%;
   margin: 0 auto;
 }
 .testemunhos > div {
   flex: 1 1 400px;
+  margin: 10px;
+  max-width: 100%;
+
+}
+footer{
+  background-color: white;
 }
