@@ -8,7 +8,7 @@ header{
   padding-right: 40px;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #001f03;
+  background-color: #44573D;
   
 }
 header p{
@@ -26,7 +26,7 @@ body {
   .copy {
     padding-bottom: 30px;
     padding-top: 30px;
-    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(0, 165, 14), #195500 );
+    background-image: radial-gradient(farthest-corner at 90% 50%, #5FA341, #325723);
 }
 .copy > p {
   color: white;
@@ -86,9 +86,8 @@ body {
   font-size: 16px;
   padding: 16px 32px;
 }
-#relogio {
-  color: chocolate;
-}
+
+
 #garantiaimg{
 display: block;
 margin: auto;
@@ -96,36 +95,46 @@ height: 400px;
 padding-top: 100px;
 }
 .video1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 100px;
-    border-color: black;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 100px;
+  border-color: black;
+ 
     
 }
-
+.eu {
+  margin: 0px 200px 0px 200px;
+  float: right;
+  text-align: justify;
+  background-image: radial-gradient(farthest-corner at 90% 50%, #5FA341, #325723);
+}
 .explicando1 {
     background-color:white;
  
     padding: 40px;
 
 }
-.imagem1{
+.imagemLoh{
 
-    display: block;
-    border-radius: 50%;
-    border-color: black;
-    border-width: 15px;
-    padding: 15px 50px 15px 15px;
-    max-width: 100%;
-    float: left;
+  margin: 15px 150px 150px 0px;
+  max-width: 100%;
+  float: left;
+  display: block;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 15px;
 
  
 }
-#quemsou {
+.quemsou {
+
   float: inline-end;
-
-
+  background-image: radial-gradient(farthest-corner at 90% 50%, #5FA341, #325723);
+}
+.quemsou > h2{
+  
 }
 #garantia {
  
@@ -185,7 +194,8 @@ img{
     padding-left: 50px;
   }
   .autoridade{
-    background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
+    background-color: white;
+    padding: 30px;
   }
   .garantia{
     
@@ -213,7 +223,7 @@ img{
       background-color: yellow;
   }
 .modulo{
-  background-image: radial-gradient(farthest-corner at 90% 50%, rgb(0, 165, 14), #195500 );
+  background-image: radial-gradient(farthest-corner at 90% 50%, #5FA341, #325723);
 
   padding-bottom: 30px;
   padding-top: 30px;
@@ -230,6 +240,11 @@ color: white;
   grid-gap: 1px;
   padding-right: 410px;
   padding-left: 410px;
+}
+@media screen and (max-width: 780px) {
+  .mod1 {
+    width: 100%;
+  }  
 }
 
 .modulos > div {
@@ -276,10 +291,24 @@ footer > p {
   margin-left: auto;
 }
 #dias, #hora, #min, #sec {
-display: inline;
-border: 0;
 
+display: grid;
+
+text-align: center;
+max-width: 10%;
+margin: 0 auto;
+border: 0;
+padding: 30px;
+background-color: rgb(255, 255, 78);
+color: rgb(253, 44, 44);
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 font-size: 100px; 
  }
- 
+ a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
