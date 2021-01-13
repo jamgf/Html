@@ -8,7 +8,7 @@ header{
   padding-right: 40px;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #44573D;
+  background-color: black;
   
 }
 header p{
@@ -133,9 +133,7 @@ padding-top: 100px;
   float: inline-end;
   background-image: radial-gradient(farthest-corner at 90% 50%, #5FA341, #325723);
 }
-.quemsou > h2{
-  
-}
+
 #garantia {
  
   font-size: 30px;
@@ -222,14 +220,19 @@ img{
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       background-color: yellow;
   }
-.modulo{
+.row{
   background-image: radial-gradient(farthest-corner at 90% 50%, #5FA341, #325723);
 
   padding-bottom: 30px;
   padding-top: 30px;
 }
-.modulo > h2 {
+.row > h2 {
 color: white;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .modulos{
  
