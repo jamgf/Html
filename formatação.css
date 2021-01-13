@@ -8,7 +8,7 @@ header{
   padding-right: 40px;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #004105;
+  background-color: #001f03;
   
 }
 header p{
@@ -24,8 +24,16 @@ body {
     color: #ffffff;
   }
   .copy {
-    
+    padding-bottom: 30px;
+    padding-top: 30px;
     background-image: radial-gradient(farthest-corner at 90% 50%, rgb(0, 165, 14), #195500 );
+}
+.copy > p {
+  color: white;
+  padding-top: 30px;
+}
+.copy > p > strong{
+  color: #7cd656;
 }
 .container {
   position: relative;
@@ -63,12 +71,13 @@ body {
  #cartao{
    display: block;
    height: auto;
+   margin-left: auto;
+   margin-right: auto;
    width: 40%;
-margin: 40px;
-padding: 15px;
-
-   background-color: white;
-   border-radius: 30px;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 30px;
  }
 
 .text {
@@ -201,10 +210,16 @@ img{
       background-color: yellow;
   }
 .modulo{
-  background-color: rgb(255, 255, 0);
+  background-image: radial-gradient(farthest-corner at 90% 50%, rgb(0, 165, 14), #195500 );
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.modulo > h2 {
+color: white;
 }
 .modulos{
-  background-color: rgb(255, 255, 0);
+ 
   display: grid;
   height: 800px;
   align-content: space-evenly;
@@ -232,8 +247,7 @@ img{
   padding: 30px;
 }
 .testemunhos {
-  background-image: radial-gradient(farthest-corner at 90% 50%, rgb(196, 247, 200), #7cd656 );
-    display: grid;
+   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   max-width: 100%;
@@ -246,5 +260,9 @@ img{
 
 }
 footer{
-  background-color: white;
+  background-color: #001f03;
+
+}
+footer > p {
+  color: white;
 }
