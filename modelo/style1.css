@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+section {
+    padding: 7em 0;
+}
+.studio{
+    background-image: radial-gradient(#10D0E6, #0C96A6);
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 65em;
+}
+
+
+.split{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.split > * {
+    flex-basis: 70%;
+    min-width: 10em;
+    min-height: 10em;
+}
+.spacing > * + * {
+    margin-top: var(--spacer, 2rem);
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-text, #ffffff);
+    font-weight: 700;
+    text-transform: uppercase; 
+    font-size: 1.125em;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    transition: transform 250ms ease-in-out,
+        opacity 175ms linear;
+    
+}
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+.titulo-primarios {
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vm + 1rem), 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+.titulo-secao {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    margin-bottom: 5rem;
+  }
+  header {
+    color: white;
+    padding: 15em;
+    background-image: radial-gradient(#10D0E6, #0C96A6);
+}
+.hero img {
+    float: left;
+    height: 100%;
+   
+  }
+  
+  .hero h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+footer {
+    background: #065159;
+}
